@@ -20,10 +20,13 @@ extensions = [
         )
     ]
 
-if sys.platform == 'darwin':
-    extensions.append(
-        Extension("tavutil.darwinsandbox", ["tavutil/darwinsandbox.c"])
-        )
+# TODO(tav): Disable the sandbox for now as it doesn't seem to work on OS X
+# Lion.
+#
+# if sys.platform == 'darwin':
+#     extensions.append(
+#         Extension("tavutil.darwinsandbox", ["tavutil/darwinsandbox.c"])
+#         )
 
 # ------------------------------------------------------------------------------
 # Run Setup
