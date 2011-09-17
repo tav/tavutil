@@ -59,9 +59,11 @@ def run_command(
     except OSError:
         error = sys.exc_info()[1]
         if error.errno == 2:
-            if exit_on_error:
-                exit("Couldn't find the %r command!" % args[0])
-            raise CommandNotFound(args[0])
+            if not error.filename:
+                if exit_on_error:
+                    exit("Couldn't find the %r command!" % args[0])
+                raise CommandNotFound(args[0])
+            raise error
         if exit_on_error:
             exit("Error running: %s\n\n%s" % (log_message, error_message))
         raise
