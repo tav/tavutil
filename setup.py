@@ -58,6 +58,6 @@ setup(
     long_description=open('README.rst').read(),
     packages=["tavutil"],
     url="https://github.com/tav/tavutil",
-    version="1.0",
+    version="1.0.1",
     zip_safe=True
     )
