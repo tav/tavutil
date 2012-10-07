@@ -49,7 +49,7 @@ setup(
     description="A collection of utility modules",
     ext_modules=extensions,
     install_requires=[
-        "BeautifulSoup==3.2.0",
+        "BeautifulSoup>=3.2.0",
         "ipaddr>=2.1.7",
         "tornado>=1.2.1"
         ],
@@ -58,6 +58,6 @@ setup(
     long_description=open('README.rst').read(),
     packages=["tavutil"],
     url="https://github.com/tav/tavutil",
-    version="1.0.1",
+    version="1.0.2",
     zip_safe=True
     )
