@@ -4,7 +4,7 @@
 """Miscellaneous utility crypto functions."""
 
 from base64 import b64encode, b32encode
-from hmac2 import HMAC
+from hmac import HMAC
 from hashlib import sha384
 from os import urandom
 from time import time
