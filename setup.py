@@ -63,5 +63,6 @@ setup(
     packages=["tavutil"],
     url="https://github.com/tav/tavutil",
     version="1.0.3",
-    zip_safe=True
+    zip_safe=True,
+    use_2to3 = True
     )
